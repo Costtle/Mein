@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -14,9 +13,8 @@ class ReadingFromFileAndCountWords {
         int countwords = 0; // создаем объект, с которого будет читать файл
         String line = scanner.nextLine(); // читает строку
         String[] words = line.split(" "); // в строке делим слова через пробел благодаря line.split
-        //System.out.println(Arrays.toString(words)); // делаем вывод слов в массив.
         countwords = countwords + words.length;
-        System.out.println("Количество слов в строчке: " + countwords);
+        System.out.println("Количество слов в строчке: " + countwords); // вывод кол-ва слов в строчке
         scanner.close();
         }
 }
