@@ -14,7 +14,6 @@ class ReadingFromFileAndCountWords {
         String line = scanner.nextLine();
         String[] words = line.split(" ");
         System.out.println(Arrays.toString(words));
-        }
         scanner.close();
-    }
+        }
 }
