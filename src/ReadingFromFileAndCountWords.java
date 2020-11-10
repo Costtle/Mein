@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -12,6 +13,8 @@ class ReadingFromFileAndCountWords {
         Scanner scanner = new Scanner(file);
         String line = scanner.nextLine();
         String[] words = line.split( regex: " ");
+
+        System.out.println(Arrays.toString(words));
         }
         scanner.close();
     }
