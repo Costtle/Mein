@@ -10,10 +10,13 @@ class ReadingFromFileAndCountWords {
         String path = "C:" + separator + "112345.txt"; // можно сделать и полный путь к файлу, либо с сеператором
         File file = new File(path);
 
-        Scanner scanner = new Scanner(file); // создаем объект, с которого будет читать файл
+        Scanner scanner = new Scanner(file);
+        int countwords = 0; // создаем объект, с которого будет читать файл
         String line = scanner.nextLine(); // читает строку
         String[] words = line.split(" "); // в строке делим слова через пробел благодаря line.split
-        System.out.println(Arrays.toString(words)); // делаем вывод слов в массив.
+        //System.out.println(Arrays.toString(words)); // делаем вывод слов в массив.
+        countwords = countwords + words.length;
+        System.out.println("Количество слов в строчке: " + countwords);
         scanner.close();
         }
 }
